@@ -40,6 +40,7 @@ function generateMarkdown(data) {
 <hr>
 ## Questions
 
+
 `;
 }
 

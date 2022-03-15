@@ -59,8 +59,8 @@ const questions = () => {
     
 };
 // TODO: Create a function to write README file
-function writeFile(data) {
-    return new Promise((resolve, reject)=> {
+const writeFile = data => {
+    return new Promise((resolve, reject) => {
         fs.writeFile('README.md', data, err => {
             if (err) {
                 reject (err)
@@ -72,17 +72,23 @@ function writeFile(data) {
             }) 
         })
     })
-}
+};
 
 // TODO: Create a function to initialize app
 function init() {
     questions()
         .then(readData => {
-            console.log(readData)
-           return readGenerate(readData)
+          console.log(readData)
+          return readGenerate(readData)
         })
         .then(madeRead => {
-            return writeFile(madeRead)
+          return writeFile(madeRead)
+        })
+        .then(writeFileResponse => {
+            console.log(writeFileResponse)
+        })
+        .catch(err => {
+            console.log(err)
         })
 }  
 
