@@ -27,9 +27,9 @@ const questions = () => {
         },
         {
             type: 'list',
-            name: 'licence',
-            message: 'Choice Project licence: ',
-            choices: ['MIT', 'GNU General Public License v3.0', 'Microsoft Public License', 'Mozilla Public License 2.0']
+            name: 'license',
+            message: 'Choice Project license: ',
+            choices: ['MIT', 'GNU General Public License v3.0', 'Mozilla Public License 2.0']
         },
         {
             type: 'input',
@@ -61,7 +61,7 @@ const questions = () => {
 // TODO: Create a function to write README file
 const writeFile = data => {
     return new Promise((resolve, reject) => {
-        fs.writeFile('README.md', data, err => {
+        fs.writeFile('../README.md', data, err => {
             if (err) {
                 reject (err)
                 return;
