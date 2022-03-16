@@ -102,7 +102,7 @@ module.exports = data => {
 ## Description
  ${data.description}
 ## Table Of Content
-  ### [Installation](#installtion)
+  ### [Installation](#installation)
   ### [Usage](#usage)
   ### [License](#license)
   ### [Contribute](#contribute)
