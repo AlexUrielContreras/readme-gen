@@ -33,7 +33,7 @@ const questions = () => {
         },
         {
             type: 'input',
-            name: 'contrubuation',
+            name: 'contribute',
             message: 'How can people contribute to Your Project: '
         },
         {
