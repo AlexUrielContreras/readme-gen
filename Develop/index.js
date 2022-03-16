@@ -8,7 +8,15 @@ const questions = () => {
         {
             type: 'input',
             name: 'title',
-            message: 'Enter the Title of your Project: ' 
+            message: 'Enter the Title of your Project: ', 
+            validate: titleInput => {
+                if (titleInput) {
+                    return true 
+                } else {
+                    console.log('Please Enter Project Title')
+                    return false 
+                }
+            }
         },
         {
             type: 'input',
@@ -29,7 +37,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Choice Project license: ',
-            choices: ['MIT', 'GNU General Public License v3.0', 'Mozilla Public License 2.0']
+            choices: ['MIT', 'ISC License', 'Boost Software License 1.0']
         },
         {
             type: 'input',
