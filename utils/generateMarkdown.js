@@ -126,7 +126,7 @@ module.exports = data => {
 ${data.test}
 
 ## Questions
-  ### If you have more questions feel free to email me at any time: [Gmail](${data.email})
+  ### If you have more questions feel free to email me at any time: ${data.email}
   ### Check out my Github here: [Github](https://www.github.com/${data.github})
 `;
 }
